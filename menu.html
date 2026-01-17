@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực Đơn Tiệc Cưới - Diamond Palace Wedding Center</title>
+    <meta
+      name="description"
+      content="Khám phá hơn 200 món ăn Á - Âu cao cấp được chế biến bởi đầu bếp 5 sao"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="logo-icon me-2">
+              <i class="fas fa-heart text-danger fs-2"></i>
+              <i class="fas fa-sparkles sparkle"></i>
+            </div>
+            <div>
+              <div class="logo-title">Diamond Palace</div>
+              <div class="logo-subtitle">Trung Tâm Tiệc Cưới Cao Cấp</div>
+            </div>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wedding-hall.html">Sảnh cưới</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="menu.html">Thực đơn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Thư viện ảnh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Dịch vụ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Liên hệ</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-gradient" href="contact.html"
+                  >Đặt tiệc ngay</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section
+      class="page-hero"
+      style="
+        background-image: url('img/banner-Menu.jpg');
+      "
+    >
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center text-white">
+            <h1 class="display-3 fw-bold mb-3">Thực Đơn Tiệc Cưới</h1>
+            <p class="lead">
+              Tinh hoa ẩm thực Á - Âu được chế biến bởi đầu bếp 5 sao
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <span class="badge bg-orange-subtle text-orange mb-3">
+              <i class="fas fa-utensils me-2"></i>Hơn 200 món ăn cao cấp
+            </span>
+            <h2 class="display-5 fw-bold mb-4">Tinh Hoa Ẩm Thực Á - Âu</h2>
+            <p class="lead text-muted">
+              Hơn 200 món ăn đa dạng từ Á đến Âu, được chế biến bởi đội ngũ đầu
+              bếp 5 sao với hơn 20 năm kinh nghiệm. Thực đơn có thể tùy chỉnh
+              linh hoạt theo khẩu vị, phong cách và ngân sách của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <!-- Nav Tabs -->
+        <ul class="nav nav-pills nav-fill mb-5" id="menuTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="appetizer-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#appetizer"
+              type="button"
+            >
+              <i class="fas fa-leaf me-2"></i>Khai Vị
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="main-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#main"
+              type="button"
+            >
+              <i class="fas fa-drumstick-bite me-2"></i>Món Chính
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="soup-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#soup"
+              type="button"
+            >
+              <i class="fas fa-bowl-food me-2"></i>Súp & Cháo
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="dessert-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dessert"
+              type="button"
+            >
+              <i class="fas fa-ice-cream me-2"></i>Tráng Miệng
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="menuTabContent">
+          <!-- Appetizers -->
+          <div class="tab-pane fade show active" id="appetizer" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/goingosen.jpg"
+                    class="card-img-top"
+                    alt="Gỏi ngó sen"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gỏi Ngó Sen Tôm Thịt</h5>
+                    <p class="card-text text-muted">
+                      Gỏi ngó sen giòn rụm, tôm tươi dai ngọt, thịt ba chỉ thơm
+                      béo, rau thơm đặc biệt, nước mắm chua ngọt đậm đà.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/salad-rau-cu.jpg"
+                    class="card-img-top"
+                    alt="Salad"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Salad Rau Củ Hữu Cơ</h5>
+                    <p class="card-text text-muted">
+                      Rau xà lách, cà chua bi, dưa chuột, cà rốt baby, bơ, sốt
+                      vinaigrette mật ong đặc biệt.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/goicuon.jpg"
+                    class="card-img-top"
+                    alt="Gỏi cuốn"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gỏi Cuốn Tôm Thịt</h5>
+                    <p class="card-text text-muted">
+                      Bánh tráng tươi cuốn tôm, thịt heo luộc, bún, rau sống,
+                      chấm tương đậu phộng béo ngậy.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/nemran.jpg"
+                    class="card-img-top"
+                    alt="Nem"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Nem Rán Hải Sản</h5>
+                    <p class="card-text text-muted">
+                      Nem cuốn tôm, cua, thịt heo băm, miến, rau củ, chiên giòn
+                      vàng, chấm nước mắm chua ngọt.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/bowagyu.jpg"
+                    class="card-img-top"
+                    alt="Carpaccio"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Carpaccio Bò Wagyu</h5>
+                    <p class="card-text text-muted">
+                      Thịt bò Wagyu thái mỏng, rau arugula, phô mai parmesan,
+                      dầu olive truffle, chanh leo.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                    <span class="badge bg-warning-subtle text-warning">
+                      <i class="fas fa-star me-1"></i>Đặc biệt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/nambaongu.jpg"
+                    class="card-img-top"
+                    alt="Khai vị"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Nấm Bào Ngư</h5>
+                    <p class="card-text text-muted">
+                      Nấm bào ngư áp chảo giòn nhẹ, giữ vị ngọt tự nhiên. Thấm sốt đậm đà và thơm hấp dẫn.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/salad-rau-cang-cua.jpg"
+                    class="card-img-top"
+                    alt="Khai vị"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Salad rau càng cua bắp bò</h5>
+                    <p class="card-text text-muted">
+                      Rau càng cua giòn, kết hợp thịt bò luộc và nước mắm chua ngọt – một món dân dã nhưng vẫn đầy tinh tế.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Foie-gras,jpg.jpeg"
+                    class="card-img-top"
+                    alt="Khai vị"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Foie gras áp chảo</h5>
+                    <p class="card-text text-muted">
+                      Áp chảo Foie Gras nhằm đạt được sự cân bằng, với lớp vỏ màu nâu vàng và phần nhân nóng chảy, mượt mà.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Courses -->
+          <div class="tab-pane fade" id="main" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/tomhum.jpg"
+                    class="card-img-top"
+                    alt="Tôm hùm"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Tôm Hùm Alaska Nướng Bơ</h5>
+                    <p class="card-text text-muted">
+                      Tôm hùm Alaska tươi sống 500-700g/con, nướng bơ tỏi thơm
+                      lừng, phục vụ kèm rau củ nướng và khoai tây nghiền.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/bowagyumuoiot.jpg"
+                    class="card-img-top"
+                    alt="Bò Wagyu"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bò Wagyu Nướng Muối Ớt</h5>
+                    <p class="card-text text-muted">
+                      Thịt bò Wagyu A5 Nhật Bản, nướng chín tái theo ý muốn, vị
+                      ngọt tự nhiên tan chảy, kèm sốt tiêu đen.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/vitquay.jpg"
+                    class="card-img-top"
+                    alt="Vịt quay"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vịt Quay Bắc Kinh</h5>
+                    <p class="card-text text-muted">
+                      Vịt quay giòn da, thịt mềm ngọt, phục vụ với bánh crepe,
+                      hành, dưa chuột và tương đặc biệt.
+                    </p>
+                    <span class="badge bg-warning-subtle text-warning">
+                      <i class="fas fa-star me-1"></i>Đặc sản
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/cahoi.jpg"
+                    class="card-img-top"
+                    alt="Cá"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cá Hồi Na Uy Nướng</h5>
+                    <p class="card-text text-muted">
+                      Phi lê cá hồi Na Uy 200g, nướng hoàn hảo, sốt kem chanh,
+                      rau asparagus và nấm truffle.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/gatan.jpg"
+                    class="card-img-top"
+                    alt="Gà"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gà Tần Thuốc Bắc</h5>
+                    <p class="card-text text-muted">
+                      Gà ta nguyên con tần với nhân sâm, đương quy, kỷ tử, hồng
+                      táo, bổ dưỡng và thơm ngon.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/cua-hoang-de.jpg"
+                    class="card-img-top"
+                    alt="Hải sản"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cua Hoàng Đế Nướng Phô Mai</h5>
+                    <p class="card-text text-muted">
+                      Cua hoàng đế Alaska, nướng phô mai bơ tỏi, thịt cua ngọt
+                      béo, thơm phức.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/bo-uc.jpg"
+                    class="card-img-top"
+                    alt="Bò"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bò Úc Nướng Sốt Tiêu Đen</h5>
+                    <p class="card-text text-muted">
+                      Thăn ngoại bò Úc 250g, nướng medium rare, sốt tiêu đen đậm
+                      đà, khoai tây chiên.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/bbq.jpg"
+                    class="card-img-top"
+                    alt="Heo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Sườn Heo BBQ Mỹ</h5>
+                    <p class="card-text text-muted">
+                      Sườn heo baby back ribs, ướp gia vị BBQ, nướng chậm 4
+                      tiếng, mềm tan ngọt thịt.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/tom-su.jpg"
+                    class="card-img-top"
+                    alt="Tôm"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Tôm Sú Nướng Muối Ớt</h5>
+                    <p class="card-text text-muted">
+                      Tôm sú size 3-5 con/kg, nướng muối ớt xanh, thơm cay đậm
+                      đà, chấm muối tiêu chanh.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Ga-chien-mam-toi.jpg"
+                    class="card-img-top"
+                    alt="Gà"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gà chiên mắm tỏi</h5>
+                    <p class="card-text text-muted">
+                      Gà chiên mắm tỏi ớt thơm lừng, nước sốt vừa ăn hòa quyện cùng hương thơm của tỏi và vị cay cay của ớt.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Ca-chem.jpg"
+                    class="card-img-top"
+                    alt="Cá"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cá chẽm hấp hành gừng</h5>
+                    <p class="card-text text-muted">
+                     Món cá chẽm thơm phức, thịt ngọt, đậm đà hương vị gia vị và nhân xào, ăn vào hấp dẫn và ngon miệng.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Veal-Marsala.jpg"
+                    class="card-img-top"
+                    alt="Thịt"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Veal Marsala</h5>
+                    <p class="card-text text-muted">
+                     Thịt bê được nướng chín và nấu với nước sốt Marsala, thường ăn kèm với nấm và một loại pasta.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soup -->
+          <div class="tab-pane fade" id="soup" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/sup-cua-hai-san.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp Cua Hải Sản</h5>
+                    <p class="card-text text-muted">
+                      Súp cua đậm đà với tôm, cá, mực, bào ngư, nấu theo công
+                      thức truyền thống Hong Kong.
+                    </p>
+                    <span class="badge bg-warning-subtle text-warning">
+                      <i class="fas fa-star me-1"></i>Đặc biệt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/sup-bao-ngu.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp Bào Ngư Nấm Đông Cô</h5>
+                    <p class="card-text text-muted">
+                      Bào ngư Nam Phi, nấm đông cô Nhật, hầm nhuyễn, nước súp
+                      trong vắt, thơm ngon bổ dưỡng.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/chao-bao-ngu.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cháo Bào Ngư Yến Sào</h5>
+                    <p class="card-text text-muted">
+                      Cháo gạo nhuyễn, bào ngư, yến sào, thịt gà xé, hành phi
+                      thơm, dinh dưỡng cao.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/sup-ga.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp Gà Hầm Nấm Truffle</h5>
+                    <p class="card-text text-muted">
+                      Gà ta hầm nhừ, nấm truffle Pháp, khoai tây, hành tây, cà
+                      rốt, thơm nồng đặc biệt.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/sup-hai-san.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp Hải Sản Thái</h5>
+                    <p class="card-text text-muted">
+                      Tom Yum Goong cay chua đặc trưng, tôm, mực, cá, sả, chanh,
+                      ớt, lá chanh kaffir.
+                    </p>
+                    <span class="badge bg-info-subtle text-info">
+                      <i class="fas fa-globe-asia me-1"></i>Món Á
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/chao-yen.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Cháo Yến Hạt Sen</h5>
+                    <p class="card-text text-muted">
+                      Cháo yến thơm dịu, mềm mịn, vị béo nhẹ của tổ yến và vị bùi thanh của hạt sen, mang đến món ăn bổ dưỡng.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/sup-cua-bap-kem.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp cua bắp kem</h5>
+                    <p class="card-text text-muted">
+                      Kết hợp giữa thịt cua, hạt bắp ngọt và kem tươi, tạo nên món súp béo ngậy, mềm mịn.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Sup-cua-jambon.jpg"
+                    class="card-img-top"
+                    alt="Súp"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Súp cua jambon nấm linh chi</h5>
+                    <p class="card-text text-muted">
+                      Jambon mặn nhẹ, nấm linh chi giòn giòn, kết hợp thịt cua tạo nên món súp vừa ngon miệng vừa bổ dưỡng.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="tab-pane fade" id="dessert" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Banh-Gateaux.jpg"
+                    class="card-img-top"
+                    alt="Bánh"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bánh Gateaux Kem Tươi</h5>
+                    <p class="card-text text-muted">
+                      Bánh gateaux nhiều tầng, kem tươi Anchor, trang trí tinh
+                      xảo theo concept tiệc cưới.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Mousse-Chocolate.jpg"
+                    class="card-img-top"
+                    alt="Mousse"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Mousse Chocolate Pháp</h5>
+                    <p class="card-text text-muted">
+                      Mousse chocolate nhập khẩu từ Pháp, đậm đà béo ngậy, phủ
+                      lớp ganache bóng mượt.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/trai-cay.jpg"
+                    class="card-img-top"
+                    alt="Trái cây"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Trái Cây Nhiệt Đới</h5>
+                    <p class="card-text text-muted">
+                      Tổng hợp trái cây tươi ngon trong mùa: xoài, dưa hấu, dứa,
+                      nho, dâu tây, kiwi, trang trí nghệ thuật.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Tươi ngon
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Tiramisu.jpg"
+                    class="card-img-top"
+                    alt="Tiramisu"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Tiramisu Ý</h5>
+                    <p class="card-text text-muted">
+                      Bánh tiramisu truyền thống Ý, phô mai mascarpone, bánh
+                      ladyfinger, cà phê espresso, bột cacao.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Panna-Cotta.jpg"
+                    class="card-img-top"
+                    alt="Panna cotta"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Panna Cotta Hoa Quả</h5>
+                    <p class="card-text text-muted">
+                      Panna cotta vanilla mềm mịn, sốt dâu tây tươi, bạc hà và
+                      trái cây trang trí.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Kem-Gelato.jpg"
+                    class="card-img-top"
+                    alt="Kem"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Kem Gelato Ý</h5>
+                    <p class="card-text text-muted">
+                      Gelato nhập khẩu Ý đa dạng vị: vani, chocolate, dâu tây,
+                      matcha, phục vụ tươi mát.
+                    </p>
+                    <span class="badge bg-primary-subtle text-primary">
+                      <i class="fas fa-globe me-1"></i>Món Âu
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Macaron-Phap.jpg"
+                    class="card-img-top"
+                    alt="Macaron"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Macaron Pháp</h5>
+                    <p class="card-text text-muted">
+                      Macaron Pháp nhiều màu sắc vị: chocolate, vani, dâu,
+                      chanh, bạc hà, trang trí tiệc đẹp mắt.
+                    </p>
+                    <span class="badge bg-danger-subtle text-danger">
+                      <i class="fas fa-fire me-1"></i>Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm menu-card">
+                  <img
+                    src="img/Banh-Flan.jpg"
+                    class="card-img-top"
+                    alt="Bánh flan"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Bánh Flan Caramen</h5>
+                    <p class="card-text text-muted">
+                      Bánh flan truyền thống, mềm mịn, caramen đắng ngọt hài
+                      hòa, làm tươi mỗi ngày.
+                    </p>
+                    <span class="badge bg-success-subtle text-success">
+                      <i class="fas fa-leaf me-1"></i>Món Việt
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Menu Packages -->
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">Gói Thực Đơn Mẫu</h2>
+          <p class="lead text-muted">
+            Các gói thực đơn được thiết kế sẵn, có thể tùy chỉnh theo nhu cầu
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card h-100 border-0 shadow-lg">
+              <div
+                class="card-header bg-gradient-custom text-white text-center py-3"
+              >
+                <h4 class="mb-0">Gói Tiêu Chuẩn</h4>
+                <p class="mb-0">8 món / bàn</p>
+              </div>
+              <div class="card-body">
+                <div class="text-center mb-4">
+                  <span class="display-6 fw-bold text-danger">450.000đ</span>
+                  <span class="text-muted">/khách</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Gỏi cuốn tôm
+                    thịt
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Súp cua hải
+                    sản
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Tôm sú nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cá hồi nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Gà tần thuốc
+                    bắc
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Bò Úc nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cơm chiên
+                    Dương Châu
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Tráng miệng +
+                    Trái cây
+                  </li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-danger w-100 mt-3"
+                  >Đặt ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100 border-0 shadow-lg border-danger">
+              <div class="card-header bg-danger text-white text-center py-3">
+                <span class="badge bg-warning mb-2">Phổ biến nhất</span>
+                <h4 class="mb-0">Gói Cao Cấp</h4>
+                <p class="mb-0">12 món / bàn</p>
+              </div>
+              <div class="card-body">
+                <div class="text-center mb-4">
+                  <span class="display-6 fw-bold text-danger">750.000đ</span>
+                  <span class="text-muted">/khách</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Carpaccio bò
+                    Wagyu
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Súp bào ngư
+                    nấm
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Tôm hùm nướng
+                    bơ
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Bò Wagyu nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Vịt quay Bắc
+                    Kinh
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cua hoàng đế
+                    nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cá hồi sốt
+                    truffle
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cháo yến bào
+                    ngư
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Cơm chiên hải
+                    sản
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Mousse
+                    chocolate + Macaron
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Trái cây cao
+                    cấp
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check text-success me-2"></i>Gelato Ý
+                  </li>
+                </ul>
+                <a href="contact.html" class="btn btn-danger w-100 mt-3"
+                  >Đặt ngay</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card h-100 border-0 shadow-lg">
+              <div class="card-header bg-dark text-white text-center py-3">
+                <h4 class="mb-0">Gói VIP</h4>
+                <p class="mb-0">15 món / bàn</p>
+              </div>
+              <div class="card-body">
+                <div class="text-center mb-4">
+                  <span class="display-6 fw-bold text-danger">1.200.000đ</span>
+                  <span class="text-muted">/khách</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Tất cả món gói
+                    Cao Cấp
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Bào ngư nướng
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Hải sâm Nhật
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Yến sào hầm
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Sashimi cao cấp
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Rượu vang nhập
+                    khẩu
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-star text-warning me-2"></i>Trang trí bàn
+                    tiệc đặc biệt
+                  </li>
+                </ul>
+                <a href="contact.html" class="btn btn-dark w-100 mt-3"
+                  >Đặt ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-white bg-gradient-custom">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="display-5 fw-bold mb-3">
+              Muốn thử món trước khi đặt tiệc?
+            </h2>
+            <p class="lead mb-0">
+              Liên hệ để được sắp xếp lịch thử món miễn phí và tư vấn thực đơn
+              phù hợp
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="contact.html" class="btn btn-light btn-lg px-5">
+              Đặt lịch thử món
+              <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-heart text-danger fs-2 me-2"></i>
+              <div>
+                <h5 class="mb-0">Diamond Palace</h5>
+                <small class="text-white-50">Trung Tâm Tiệc Cưới Cao Cấp</small>
+              </div>
+            </div>
+            <p class="text-white-50">
+              Với hơn 10 năm kinh nghiệm, chúng tôi tự hào là đối tác tin cậy của hàng ngàn cặp đôi trên toàn quốc. Cam kết mang đến dịch vụ tốt nhất cho ngày trọng đại của bạn.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-3">Liên kết nhanh</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white-50 text-decoration-none">Trang chủ</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-white-50 text-decoration-none">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="wedding-hall.html" class="text-white-50 text-decoration-none">Sảnh cưới</a>
+              </li>
+              <li>
+                <a href="menu.html" class="text-white-50 text-decoration-none">Thực đơn</a>
+              </li>
+              <li>
+                <a href="gallery.html" class="text-white-50 text-decoration-none">Thư viện ảnh</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-white-50 text-decoration-none">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-white-50 text-decoration-none">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h5 class="mb-3">Dịch vụ</h5>
+            <ul class="list-unstyled">
+              <li><a href="wedding-hall.html" class="text-white-50 text-decoration-none">Tổ chức tiệc cưới</a></li>
+              <li><a href="services.html" class="text-white-50 text-decoration-none">Trang trí sự kiện</a></li>
+              <li><a href="services.html" class="text-white-50 text-decoration-none">Âm thanh - Ánh sáng</a></li>                <li><a href="services.html" class="text-white-50 text-decoration-none">MC - DJ chuyên nghiệp</a></li>
+              <li><a href="services.html" class="text-white-50 text-decoration-none">Chụp ảnh - Quay phim</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <h5 class="mb-3">Liên hệ</h5>
+            <ul class="list-unstyled text-white-50">
+              <li>📍 182 Lê Duẩn, Phường Trường Vinh, Tỉnh Nghệ An</li>
+              <li>📞 Hotline: 0973415466</li>
+              <li>✉️ hoangnguyenx15@gmail.com</li>
+              <li>⏰ 8:00 - 22:00 (Hàng ngày)</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-4 bg-white opacity-25" />
+
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white-50">
+              &copy; 2024 Diamond Palace. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white-50 text-decoration-none me-3"
+              >Chính sách bảo mật</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none"
+              >Điều khoản dịch vụ</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Ảnh - Diamond Palace Wedding Center</title>
+    <meta name="description" content="Khám phá thư viện ảnh các tiệc cưới đã được tổ chức tại Diamond Palace">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="logo-icon me-2">
+                        <i class="fas fa-heart text-danger fs-2"></i>
+                        <i class="fas fa-sparkles sparkle"></i>
+                    </div>
+                    <div>
+                        <div class="logo-title">Diamond Palace</div>
+                        <div class="logo-subtitle">Trung Tâm Tiệc Cưới Cao Cấp</div>
+                    </div>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wedding-hall.html">Sảnh cưới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Thực đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Thư viện ảnh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-gradient" href="contact.html">Đặt tiệc ngay</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1759477274116-e3cb02d2b9d8?w=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h1 class="display-3 fw-bold mb-3">Thư Viện Ảnh</h1>
+                    <p class="lead">Những khoảnh khắc đáng nhớ từ các tiệc cưới tại Diamond Palace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-number display-4 fw-bold text-danger">2000+</div>
+                    <p class="text-muted">Tiệc cưới</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number display-4 fw-bold text-danger">10K+</div>
+                    <p class="text-muted">Hình ảnh</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number display-4 fw-bold text-danger">4</div>
+                    <p class="text-muted">Sảnh tiệc</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number display-4 fw-bold text-danger">10</div>
+                    <p class="text-muted">Năm kinh nghiệm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bộ lọc Thư viện -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Khoảnh Khắc Đáng Nhớ</h2>
+                <p class="lead text-muted mb-4">
+                    Khám phá những hình ảnh tuyệt đẹp từ các tiệc cưới đã được tổ chức tại Diamond Palace
+                </p>
+                
+                <!-- Nút lọc -->
+                <div class="gallery-filter">
+                    <button class="btn btn-outline-danger active" data-filter="all">
+                        <i class="fas fa-th me-2"></i>Tất cả
+                    </button>
+                    <button class="btn btn-outline-danger" data-filter="hall">
+                        <i class="fas fa-building me-2"></i>Sảnh tiệc
+                    </button>
+                    <button class="btn btn-outline-danger" data-filter="decoration">
+                        <i class="fas fa-fan me-2"></i>Trang trí
+                    </button>
+                    <button class="btn btn-outline-danger" data-filter="food">
+                        <i class="fas fa-utensils me-2"></i>Ẩm thực
+                    </button>
+                    <button class="btn btn-outline-danger" data-filter="ceremony">
+                        <i class="fas fa-ring me-2"></i>Lễ cưới
+                    </button>
+                    <button class="btn btn-outline-danger" data-filter="outdoor">
+                        <i class="fas fa-tree me-2"></i>Ngoài trời
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lưới Thư Viện Ảnh -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Ảnh sảnh -->
+                <div class="gallery-item" data-category="hall">
+                    <span class="badge category-badge bg-danger">Sảnh tiệc</span>
+                    <img src="img/thu-vien-anh1.jpg" alt="Sảnh tiệc sang trọng">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Sảnh Crystal</strong><br>
+                            <small>Tiệc cưới 500 khách</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hall">
+                    <span class="badge category-badge bg-danger">Sảnh tiệc</span>
+                    <img src="img/thu-vien-anh7.jpg" alt="Sảnh Diamond">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Sảnh Diamond</strong><br>
+                            <small>Không gian lộng lẫy</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hall">
+                    <span class="badge category-badge bg-danger">Sảnh tiệc</span>
+                    <img src="img/thu-vien-anh12.jpg" alt="Sảnh Royal">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Sảnh Royal</strong><br>
+                            <small>Tiệc cưới đại tiệc</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ảnh trang trí -->
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh11.jpg" alt="Trang trí hoa">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Backdrop hoa tươi</strong><br>
+                            <small>Phong cách romantic</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh18.jpg" alt="Backdrop sân khấu">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Sân khấu 3D</strong><br>
+                            <small>Concept hiện đại</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh4.jpg" alt="Lối đi cô dâu">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Lối đi cô dâu</strong><br>
+                            <small>Trang trí lãng mạn</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ảnh ẩm thực -->
+                <div class="gallery-item" data-category="food">
+                    <span class="badge category-badge bg-success">Ẩm thực</span>
+                    <img src="img/thu-vien-anh3.jpg" alt="Bàn tiệc">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Bàn tiệc cao cấp</strong><br>
+                            <small>Thực đơn 12 món</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <span class="badge category-badge bg-success">Ẩm thực</span>
+                    <img src="img/thu-vien-anh8.jpg" alt="Bánh cưới">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Bánh cưới 5 tầng</strong><br>
+                            <small>Thiết kế sang trọng</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <span class="badge category-badge bg-success">Ẩm thực</span>
+                    <img src="img/thu-vien-anh16.jpg" alt="Món ăn">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Món ăn Á - Âu</strong><br>
+                            <small>Đầu bếp 5 sao</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ảnh buổi lễ -->
+                <div class="gallery-item" data-category="ceremony">
+                    <span class="badge category-badge bg-primary">Lễ cưới</span>
+                    <img src="img/thu-vien-anh21.jpg" alt="Cặp đôi">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Khiêu vũ đầu tiên</strong><br>
+                            <small>Khoảnh khắc lãng mạn</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ceremony">
+                    <span class="badge category-badge bg-primary">Lễ cưới</span>
+                    <img src="img/thu-vien-anh22.jpg" alt="Lễ cưới">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Trao nhẫn cưới</strong><br>
+                            <small>Ngày trọng đại</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ceremony">
+                    <span class="badge category-badge bg-primary">Lễ cưới</span>
+                    <img src="img/thu-vien-anh2.jpg" alt="Chụp ảnh cưới">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Chụp ảnh lưu niệm</strong><br>
+                            <small>Gia đình hạnh phúc</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ảnh ngoài trời -->
+                <div class="gallery-item" data-category="outdoor">
+                    <span class="badge category-badge bg-info">Ngoài trời</span>
+                    <img src="img/thu-vien-anh6.jpg" alt="Vườn Paradise">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Vườn Paradise</strong><br>
+                            <small>Tiệc ngoài trời</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outdoor">
+                    <span class="badge category-badge bg-info">Ngoài trời</span>
+                    <img src="img/thu-vien-anh9.jpg" alt="Outdoor ceremony">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Lễ cưới ngoài trời</strong><br>
+                            <small>Phong cách rustic</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nhiều ảnh khác -->
+                <div class="gallery-item" data-category="hall">
+                    <span class="badge category-badge bg-danger">Sảnh tiệc</span>
+                    <img src="img/thu-vien-anh10.jpg" alt="Sảnh tiệc">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Ánh sáng 3D mapping</strong><br>
+                            <small>Công nghệ hiện đại</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh23.jpg" alt="Cổng hoa">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Cổng hoa lụa</strong><br>
+                            <small>Thiết kế độc đáo</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh17.jpg" alt="Bàn ký tên">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Bàn ký tên</strong><br>
+                            <small>Decor tinh tế</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <span class="badge category-badge bg-success">Ẩm thực</span>
+                    <img src="img/thu-vien-anh15.jpg" alt="Buffet">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Buffet cao cấp</strong><br>
+                            <small>Hơn 50 món</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outdoor">
+                    <span class="badge category-badge bg-info">Ngoài trời</span>
+                    <img src="img/thu-vien-anh5.jpg" alt="Garden party">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Tiệc vườn</strong><br>
+                            <small>Ban đêm lung linh</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hall">
+                    <span class="badge category-badge bg-danger">Sảnh tiệc</span>
+                    <img src="img/thu-vien-anh13.jpg" alt="Sân khấu">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Sân khấu xoay 360°</strong><br>
+                            <small>Sảnh Diamond</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decoration">
+                    <span class="badge category-badge bg-warning">Trang trí</span>
+                    <img src="img/thu-vien-anh14.jpg" alt="Centerpiece">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Centerpiece bàn tiệc</strong><br>
+                            <small>Hoa tươi cao cấp</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <span class="badge category-badge bg-success">Ẩm thực</span>
+                    <img src="img/thu-vien-anh19.jpg" alt="Cocktail">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Tiệc cocktail</strong><br>
+                            <small>Đồ uống cao cấp</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ceremony">
+                    <span class="badge category-badge bg-primary">Lễ cưới</span>
+                    <img src="img/thu-vien-anh20.jpg" alt="Veil">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Khoảnh khắc cô dâu</strong><br>
+                            <small>Đẹp tựa thiên thần</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outdoor">
+                    <span class="badge category-badge bg-info">Ngoài trời</span>
+                    <img src="img/thu-vien-anh24.jpg" alt="Veil">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-info">
+                            <strong>Lễ cưới sang trọng</strong><br>
+                            <small>Phong cách đẳng cấp</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút xem thêm -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-danger btn-lg" id="loadMoreBtn">
+                    <i class="fas fa-plus-circle me-2"></i>Xem thêm
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nút CTA -->
+    <section class="py-5 text-white bg-gradient-custom"> 
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Muốn có album cưới đẹp như thế này?</h2>
+                    <p class="lead mb-0">
+                        Liên hệ ngay với chúng tôi để được tư vấn và đặt lịch chụp ảnh
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="contact.html" class="btn btn-light btn-lg px-5">
+                        Đặt lịch ngay
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-heart text-danger fs-2 me-2"></i>
+                        <div>
+                            <h5 class="mb-0">Diamond Palace</h5>
+                            <small class="text-white-50">Trung Tâm Tiệc Cưới Cao Cấp</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">
+                        Với hơn 10 năm kinh nghiệm, chúng tôi tự hào là đối tác tin cậy của hàng ngàn cặp đôi trên toàn quốc. Cam kết mang đến dịch vụ tốt nhất cho ngày trọng đại của bạn.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                <a href="index.html" class="text-white-50 text-decoration-none">Trang chủ</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-white-50 text-decoration-none">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="wedding-hall.html" class="text-white-50 text-decoration-none">Sảnh cưới</a>
+              </li>
+              <li>
+                <a href="menu.html" class="text-white-50 text-decoration-none">Thực đơn</a>
+              </li>
+              <li>
+                <a href="gallery.html" class="text-white-50 text-decoration-none">Thư viện ảnh</a>
+              </li>
+              <li>
+                <a href="services.html" class="text-white-50 text-decoration-none">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-white-50 text-decoration-none">Liên hệ</a>
+              </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">Dịch vụ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="wedding-hall.html" class="text-white-50 text-decoration-none">Tổ chức tiệc cưới</a></li>
+                        <li><a href="services.html" class="text-white-50 text-decoration-none">Trang trí sự kiện</a></li>
+                        <li><a href="services.html" class="text-white-50 text-decoration-none">Âm thanh - Ánh sáng</a></li>
+                        <li><a href="services.html" class="text-white-50 text-decoration-none">MC - DJ chuyên nghiệp</a></li>
+                        <li><a href="services.html" class="text-white-50 text-decoration-none">Chụp ảnh - Quay phim</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-3">Liên hệ</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li>📍 182 Lê Duẩn, Phường Trường Vinh, Tỉnh Nghệ An</li>
+                        <li>📞 Hotline: 0973415466</li>
+                        <li>✉️ hoangnguyenx15@gmail.com</li>
+                        <li>⏰ 8:00 - 22:00 (Hàng ngày)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-white opacity-25">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2024 Diamond Palace. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Chính sách bảo mật</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Điều khoản dịch vụ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
